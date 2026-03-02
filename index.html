@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+    
+:root {
+    --blue: #0f43e6;
+    --orange: #f4a035;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    background: var(--blue);
+    font-family: Georgia, serif;
+    color: white;
+}
+
+/* TOP BAND */
+.top-band {
+    background: var(--orange);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.top-circle {
+    width: 70px;
+    height: 70px;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+.layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    min-height: 70vh;
+}
+
+.left-pattern {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+
+.right-pattern {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.row-right {
+    display: flex;
+    gap: 20px;
+}
+
+.rect {
+    background: var(--orange);
+    position: relative;
+}
+
+.rect::before {
+    content: "";
+    position: absolute;
+    background: var(--white);
+    inset: 20%;
+    border-radius: 50%;
+}
+
+.big {
+    width: 300px;
+    height: 120px;
+}
+.long {
+    height: 130px;
+}
+.tall {
+    width: 80px;
+    height: 230px;
+}
+.mid {
+    width: 220px;
+    height: 120px;
+}
+.small {
+    width: 80px;
+    height: 100px;
+}
+
+/* CENTER TEXT */
+.center {
+    text-align: center;
+    align-self: center;
+}
+.center h1 {
+    font-size: 42px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.center h2 {
+    font-size: 26px;
+    margin: 0;
+}
+.center p {
+    margin-top: 10px;
+    font-size: 22px;
+}
+.center a {
+    color: white;
+    text-decoration: none;
+}
+.bottom-band {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+.diamond {
+    width: 55px;
+    height: 55px;
+    background: var(--orange);
+    transform: rotate(45deg);
+}
+
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .left-pattern, .right-pattern {
+        transform: scale(0.9);
+    }
+}
+
+    </style>
+
+    <div class="top-band">
+        <div class="top-circle"></div>
+        <div class="top-circle"></div>
+        <div class="top-circle"></div>
+        <div class="top-circle"></div>
+        <div class="top-circle"></div>
+        <div class="top-circle"></div>
+        <div class="top-circle"></div>
+        <div class="top-circle"></div>
+    </div>
+
+    <div class="layout">
+
+    
+        <div class="left-pattern">
+            <div class="rect big long"></div>
+
+            <div class="row">
+                <div class="rect tall"></div>
+                <div class="rect small"></div>
+                <div class="rect mid"></div>
+            </div>
+
+            <div class="row">
+                <div class="rect tall"></div>
+                <div class="rect small"></div>
+            </div>
+        </div>
+
+    
+        <div class="center">
+            <h1>Porfolio</h1>
+            <h2>Loren Nathalia Pulido Méndez</h2>
+            <p>
+                 <a href="https://pulidoloren.github.io/P1_edici-n-c-digo-y-dise-o-/">p1</a>
+                 <a href="https://pulidoloren.github.io/p2_zevra/">p2</a>
+                 <a href="https://pulidoloren.github.io/P3/">p3</a>
+                 <a href="https://pulidoloren.github.io/p4/">p4</a>
+                 <a href="https://pulidoloren.github.io/PRACTICA-5/pages/lorenpulido.html">p5</a>
+                 <a href="https://pulidoloren.github.io/P5_2/">p5_2</a>
+                 <a href="https://pulidoloren.github.io/p_6_figma_autolayout/">p6</a>
+                 <a href="portada.pdf">p8</a>
+                <a href="https://pulidoloren.github.io/P9/">p9</a>
+                 <a href="https://www.figma.com/design/EIGy4IREuVRU9eUzCOjh1N/Untitled?node-id=0-1&t=yYK9ufVcEV6DemY7-1">p10</a>
+            </p>
+        </div>
+
+
+        <div class="right-pattern">
+            <div class="row-right">
+                <div class="rect small"></div>
+                <div class="rect tall"></div>
+                <div class="rect tall big"></div>
+            </div>
+
+            <div class="row-right">
+                <div class="rect mid"></div>
+                <div class="rect small"></div>
+            </div>
+
+            <div class="rect big long"></div>
+        </div>
+    </div>
+
+    <div class="bottom-band">
+        <div class="diamond"></div>
+        <div class="diamond"></div>
+        <div class="diamond"></div>
+        <div class="diamond"></div>
+        <div class="diamond"></div>
+        <div class="diamond"></div>
+        <div class="diamond"></div>
+    </div>
+
+</body>
+</html>
